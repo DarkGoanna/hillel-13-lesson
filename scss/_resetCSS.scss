@@ -1,0 +1,26 @@
+html, body, div, span, h1, h2, h3, p, blockquote, a, img, i, ul, li, form, label, article, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, footer, header, nav, section {
+	display: block;
+}
+ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+* {
+    box-sizing: border-box;
+    border: none;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,174 @@
+.header {
+    background-image: url(../img/group-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__curtain {
+        background-color: $curtain;
+        padding-top: 38px;
+    }
+    &__logo {
+        margin-bottom: 130px;
+    }
+    &__inner {
+        width: 493px;
+        padding-bottom: 156px;
+
+        & .header__title {
+            font-size: 85px;
+            line-height: 80px;
+            letter-spacing: -1.8px;
+            color: $text;
+            margin-bottom: 34px;
+        }
+    }
+}
+.logo {
+    &__link {
+        font-family: 'Quite Chocolatey';
+        font-size: 89px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -1.77px;
+        color: $pink;
+        cursor: pointer;
+    }
+}
+.nav {
+    padding-top: 22px;
+    align-self: flex-start;
+    
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__link {
+        display: inline-block;
+        color: $nav;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+        padding: 11px 15px;
+        transition-property: all;
+        transition-duration: 0.15s;
+        transition-timing-function: ease-in-out;
+        
+        &:hover {
+            color: #ffffff;
+            background-color: $pink;
+            border-radius: 5px;
+        }
+    }
+}
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 33px 23px 28px 24px;
+    border-radius: 5.2px;
+    box-shadow: 0px -5px 38px 0 rgba(173, 173, 173, 0.75);
+    position: absolute;
+    right: 0;
+    bottom: -81px;
+
+    &__title {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -0.44px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 36px;
+        margin-left: 60px;
+    }
+    &__input {
+        width: 100%;
+        padding: 15px 19px;
+        border-radius: 5px;
+        font-family: 'PT Serif';
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: -0.4px;
+        line-height: 1;
+        margin-bottom: 17px;
+        
+        &:last-of-type {
+            margin-bottom: 22px;
+        }
+        &:placeholder {
+            font-family: 'PT Serif';
+            font-size: 20px;
+            font-weight: normal;
+            letter-spacing: -0.4px;
+            line-height: 1;
+            color: $placeholder;
+        }
+    }
+    &__checkbox {
+        align-self: flex-start;
+        margin-bottom: 17px;
+    }
+    &__button {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -0.44px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: $text;
+        border: none;
+        border-radius: 5px;
+        padding: 17px 134px;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            transform: scale(0.95);      
+        }
+    }
+}
+.input {
+    &-checkbox {
+        width: 19px;
+        height: 18px;
+        margin: 0;
+        opacity: 0;
+    }
+}
+.checkbox-wrapper {
+    display: inline-block;
+    margin-right: 26px;
+}
+.own-checkbox {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.input-checkbox:checked + .own-checkbox::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free';
+    font-weight: 900;
+    line-height: 18px;
+    color: $pink;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+.input-checkbox:focus + .own-checkbox {
+    box-shadow: 0px 0px 0px 1px $outline;
+}

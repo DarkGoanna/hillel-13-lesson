@@ -1,0 +1,85 @@
+.pricing {
+    background-color: $vanilla;
+    padding-top: 48px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-bottom: 154px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 318px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__title {
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 28px;
+        letter-spacing: -1.2px;
+    }
+    &__coast {
+        font-family: 'Montserrat';
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: -1.2px;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+    }
+    &__description-wrapper {
+        margin-bottom: 29px;
+    }
+    &__button {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -0.44px;
+        color: $text;
+        width: 205px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: $vanilla;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            background-color: $pink;
+            color: #ffffff;
+            transform: scale(0.9);    
+        }
+    }
+}
+.triangle {
+    width: 0;
+	height: 0;
+	border-top: 91px solid $triangle; 
+    border-right: 91px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__text {
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: -0.22px;
+        color: $title;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: -70px;
+        left: 5px;
+    }
+}

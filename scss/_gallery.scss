@@ -1,0 +1,52 @@
+.gallery {
+    text-align: center;
+    margin-bottom: 128px;
+    max-width: 50%;
+
+    & .gallery__wrapper {
+        width: 400px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        line-height: 1;
+        letter-spacing: -1px;
+        margin-bottom: 60px;
+    }
+    &__photo {
+        margin-bottom: 29px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.5);
+            transition-property: transform;
+            transition-timing-function: ease-out;
+            transition-duration: 0.25s;
+            animation-name: photo-shadow;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+        line-height: 1;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@keyframes photo-shadow {
+    0% {
+        box-shadow: 0px 0px 0px 1px rgba(184, 172, 147, 0.75);
+    }
+    20% {
+        box-shadow: 0px 0px 5px 7px rgba(184, 172, 147, 0.75);
+    }
+    40% {
+        box-shadow: 0px 0px 15px 11px rgba(184, 172, 147, 0.75);
+    }
+}

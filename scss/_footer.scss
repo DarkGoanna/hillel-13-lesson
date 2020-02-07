@@ -1,0 +1,15 @@
+.footer {
+    background-color: $text;
+    padding-top: 75px;
+    padding-bottom: 55px;
+    color: #ffffff;
+
+    &__logo {
+        margin-right: 11px;
+
+        & .logo__text {
+            font-size: 65px;
+            letter-spacing: -1.29px;
+        }
+    }
+}

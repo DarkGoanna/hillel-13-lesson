@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Quite Chocolatey';
+    src: url('subset-QuiteChocolatey.eot');
+    src: url('subset-QuiteChocolatey.eot?#iefix') format('embedded-opentype'),
+        url('subset-QuiteChocolatey.woff2') format('woff2'),
+        url('subset-QuiteChocolatey.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

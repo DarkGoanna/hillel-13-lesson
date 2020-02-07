@@ -1,0 +1,41 @@
+.testimonial {
+    max-width: 50%;
+
+    &__title {
+        line-height: 1;
+        letter-spacing: -1px;
+        color: $title;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+.post {
+    width: 439px;
+    padding: 23px;
+    padding-right: 77px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $text;
+        transition-timing-function: ease-in-out;
+        transition-property: all;
+        transition-duration: 0.15s;
+    }
+    &:nth-of-type(even) {
+        background-color: $vanilla;
+    }
+    &__text {
+        margin-bottom: 15px;
+    }
+    &__autor {
+        font-family: 'Montserrat';
+    }
+    &__photo {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+}

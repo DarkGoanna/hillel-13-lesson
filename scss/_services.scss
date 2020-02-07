@@ -1,0 +1,62 @@
+.services {
+    padding-top: 33px;
+
+    &__title {
+            font-family: 'Couture';
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: -1px;
+            color: $text;
+            margin-bottom: 87px;
+            text-transform: uppercase;
+    }
+    &__item {
+        width: 168px;
+        margin-bottom: 62px;
+        text-align: center;
+
+        &:hover > .services__icon {
+            color: $pink;
+            transition-property: color;
+            transition-duration: 0.15s;
+            transition-timing-function: ease-in-out;
+        }
+    }
+    &__icon {
+        color: $vanilla;
+        font-size: 155px;
+        margin-bottom: 36px;
+    }
+}
+.our-story {
+    padding-top: 28px;
+    padding-bottom: 26px;
+
+    &__text {
+        color: #ffffff;
+        width: 601px;
+    }
+    &__link {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -0.44px;
+        color: $text;
+        padding: 22px 76px 19px 67px;
+        background-color: $vanilla;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3px;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            transform: scale(0.95);      
+        }
+    }
+}
